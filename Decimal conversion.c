@@ -8,7 +8,7 @@ int main()
 	scanf("%d",&x);
 	if(x<0)
 	{
-		printf("Are you fucking kidding me?why you sucker must input a negative number ?");
+		printf("I am lazy to add the function of turn negative number,but it is so easy");
 		return 0; 
 	}
 	turn(x);
