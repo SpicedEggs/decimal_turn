@@ -8,7 +8,7 @@ int main()
 	scanf("%d",&x);
 	if(x<0)
 	{
-		printf("I am lazy to add the function of turn negative number,but it is so easy");
+		printf("Please input a number >=0");
 		return 0; 
 	}
 	turn(x);
@@ -24,15 +24,14 @@ void turn(int x)
 	
 	int n=x;
 	int i=0;
-	while(n!=1)
+	while(n!=0)
 	{
 		a[i++]=n%2;
 		n/=2;
 	}
-	a[i]=1;
-	al=i;
-	printf("binary:\n")
-	for(i=al;i>=0;i--)//>=0 because al from 1 to a.length
+	al=i-1;//this is important!because a[i++] makes i more than the real length!
+	printf("binary:\n");
+	for(i=al;i>=0;i--)//>=0 because al from 0 to a.length
 	{
 		printf("%d",a[i]);
 	}
